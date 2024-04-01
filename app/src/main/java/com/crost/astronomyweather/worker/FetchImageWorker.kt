@@ -47,10 +47,6 @@ class FetchImageWorker(context: Context, params: WorkerParameters) : CoroutineWo
         val cacheDir = context.cacheDir
         val file = File(cacheDir, "clouds_image.png")
 
-//        val outputStream = FileOutputStream(file)
-//        imageInputStream.compress(Bitmap.CompressFormat.PNG, 100, outputStream)
-//        outputStream.close()
-
         val inputStream = ByteArrayInputStream(imageInputStream.readBytes())
         inputStream.use { input ->
             file.outputStream().use { output ->

@@ -14,7 +14,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import com.crost.astronomyweather.ui.screens.main.MainScreen
+import com.crost.astronomyweather.ui.DisplayImageFromStorage
 import com.crost.astronomyweather.ui.theme.AstronomyWeatherTheme
 import com.crost.aurorabzalarm.utils.PermissionManager
 
@@ -44,7 +44,8 @@ class MainActivity : ComponentActivity() {
                         }
                     }
 
-                    MainScreen()
+                    // MainScreen()
+                    DisplayImageFromStorage()
                 }
             }
         }
