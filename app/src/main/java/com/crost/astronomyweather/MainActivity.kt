@@ -15,6 +15,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import com.crost.astronomyweather.ui.DisplayImageFromStorage
+import com.crost.astronomyweather.ui.screens.main.MainScreen
 import com.crost.astronomyweather.ui.theme.AstronomyWeatherTheme
 import com.crost.aurorabzalarm.utils.PermissionManager
 
@@ -44,7 +45,7 @@ class MainActivity : ComponentActivity() {
                         }
                     }
 
-                    // MainScreen()
+                    MainScreen()
                     DisplayImageFromStorage()
                 }
             }
@@ -60,7 +61,7 @@ class MainActivity : ComponentActivity() {
                 Log.d("MainActivity", "All permissions granted, displaying ImageGallery")
 //                fileLogger.writeLogsToInternalStorage(this, "MainActivity\nAll permissions granted, displaying ImageGallery")
                 // All permissions are granted, proceed with your logic
-                // TODO: Start TimedWorkerThread
+
             } else {
                 Log.d("MainActivity", "Some or all permissions denied, showing WelcomeScreen")
                 // Some or all permissions are denied, handle the case where the permission is required
