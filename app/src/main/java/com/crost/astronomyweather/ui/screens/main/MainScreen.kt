@@ -1,6 +1,7 @@
 package com.crost.astronomyweather.ui.screens.main
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -11,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.crost.astronomyweather.ui.AstronomyWeatherAppBar
+import com.crost.astronomyweather.ui.composables.DisplayImageFromStorage
+import com.crost.astronomyweather.ui.composables.WebViewScreen
 import com.crost.astronomyweather.ui.screens.imageslider.PreviewCustomImageSlider
 import com.crost.astronomyweather.ui.theme.DarkerBackgroundGrey
 import com.crost.astronomyweather.ui.theme.BackgroundGrey
@@ -41,7 +44,11 @@ fun MainScreen(){
             , //MaterialTheme.colorScheme.background
         ){
             //OverviewCard()
-            PreviewCustomImageSlider()
+            Column {
+                PreviewCustomImageSlider()
+                WebViewScreen()
+                DisplayImageFromStorage()
+            }
         }
 
     }

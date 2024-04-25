@@ -24,7 +24,7 @@ class FetchImageWorker(context: Context, params: WorkerParameters) : CoroutineWo
         Log.d("FetchImageWorker", "Fetching image")
         try {
             val request = Request.Builder()
-                .url("http://192.168.2.30:5000/get_cloud_image")
+                .url("http://192.168.2.113:5000/get_cloud_image")
                 .build()
 
             val response = client.newCall(request).execute()

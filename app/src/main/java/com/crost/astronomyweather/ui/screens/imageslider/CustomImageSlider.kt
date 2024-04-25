@@ -45,8 +45,8 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import coil.size.Scale
 import com.crost.astronomyweather.R
-import com.crost.astronomyweather.ui.PADDING_M
-import com.crost.astronomyweather.ui.PADDING_S
+import com.crost.astronomyweather.ui.composables.PADDING_M
+import com.crost.astronomyweather.ui.composables.PADDING_S
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 

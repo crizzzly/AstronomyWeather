@@ -1,4 +1,4 @@
-package com.crost.astronomyweather.ui
+package com.crost.astronomyweather.ui.composables
 
 import android.graphics.BitmapFactory
 import androidx.compose.foundation.Image
@@ -10,6 +10,10 @@ import java.io.File
 
 @Composable
 fun DisplayImageFromStorage() {
+    /*
+    * Displays image previously saved by worker
+    *
+    * */
     val context = LocalContext.current
     val cacheDir = context.cacheDir
     val file = File(cacheDir, "clouds_image.png")

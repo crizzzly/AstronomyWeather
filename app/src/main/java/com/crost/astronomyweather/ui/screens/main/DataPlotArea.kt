@@ -17,8 +17,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.crost.astronomyweather.R
-import com.crost.astronomyweather.ui.PADDING_S
-import com.crost.astronomyweather.ui.PADDING_XS
+import com.crost.astronomyweather.ui.composables.PADDING_S
+import com.crost.astronomyweather.ui.composables.PADDING_XS
 
 
 @Composable

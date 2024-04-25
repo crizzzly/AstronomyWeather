@@ -1,4 +1,4 @@
-package com.crost.astronomyweather.ui
+package com.crost.astronomyweather.ui.composables
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
